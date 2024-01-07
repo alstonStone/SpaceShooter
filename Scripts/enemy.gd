@@ -1,6 +1,7 @@
 class_name Enemy extends Area2D
 
 signal killed(points)
+signal hit
 
 @export  var speed = 150
 @export var hp = 2
@@ -33,6 +34,7 @@ func _on_body_entered(body):
 
 func take_damage(ammount):
 	hp -= ammount
+	hit.emit()
 	if hp<=0:
 		killed.emit(points)
 		die()
