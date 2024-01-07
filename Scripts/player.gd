@@ -4,7 +4,7 @@ signal laser_shot(laser_scene, location)
 signal died
 
 @export var SPEED = 300.0
-@export var rate_of_fire := 0.25
+@export var rate_of_fire := 0.6
 
 @onready var muzzle = $Muzzle
 
