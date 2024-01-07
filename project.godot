@@ -13,13 +13,21 @@ config_version=5
 config/name="SpaceShooter"
 run/main_scene="res://Scenes/game.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
-config/icon="res://icon.svg"
+boot_splash/image="res://Assets/PNG/playerShip1_red.png"
+boot_splash/use_filter=false
+config/icon="res://Assets/PNG/playerShip1_red.png"
 
 [display]
 
 window/size/viewport_width=540
 window/size/viewport_height=960
 window/stretch/mode="canvas_items"
+
+[importer_defaults]
+
+animation_library={
+"animation/fps": 60.0
+}
 
 [input]
 
